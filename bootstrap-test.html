@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap Practice</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="https://use.fontawesome.com/593bfc3672.js"></script>
+<style>
+	
+		body {margin:0; padding:0;}
+
+		.img1 {
+
+    	background-image : url('./images/city.jpg');
+	}
+	
+		.img2 {
+
+		background-image : url('./images/city-2.jpg');
+	}
+
+		.img3 {
+
+		background-image : url('./images/hills.jpg');
+	}
+
+		.band {
+
+			background: #FFF;
+			height: auto;
+			
+
+	}
+
+	.band-content {text-align: center; margin-top: 70px; padding-bottom:20px;}
+
+	.band-content h3 {margin-top: 30px;}
+
+	.parallax {
+    	height: 50vh; 
+    	background-attachment: fixed; 
+    	background-position: top center; 
+    	background-size: cover;
+	}
+
+	.vh95 {height: 95vh;}
+
+	.vh50 {height: 50vh;}
+
+	.quote {margin-top: 30px; font-style: italic; color: #666;}
+
+	.quote-person {padding-bottom: 30px; font-style: normal; font-weight: bold; color: #292B2C;}
+
+	.profile {height:80px; width:80px; border-radius: 50px;}
+
+
+	
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"><img src="./images/logo.svg" width="30" height="30" alt="">    Bootstrap</a>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">About</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">Documentation</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">Examples</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+		</ul>
+	</div>
+  </nav>
+  		<div class="parallax vh95 img1"></div>
+	  		<div class="container-fluid band row">
+	  			<div class="band-content col-lg-4 col-md-12 col-sm-12">
+	  				<i class="fa fa-user-circle fa-4x"></i>
+	  				<h3>Create an account</h3>
+						<p>Mauris lobortis bibendum ante sed pretium. Proin eu neque quis arcu volutpat imperdiet quis quis arcu. Nulla hendrerit pharetra.</p>	
+	  			</div>
+	  			<div class="band-content col-lg-4 col-md-12 col-sm-12">
+	  				<i class="fa fa-handshake-o fa-4x"></i>
+	  				<h3>Connect with others</h3>
+						<p>Phasellus in tincidunt risus. Aenean eget mattis tortor, et gravida orci. Maecenas vehicula odio in sem gravida, a efficitur nisi venenatis.</p>
+	  			</div>
+	  			<div class="band-content col-lg-4 col-md-12 col-sm-12">
+	  				<i class="fa fa-commenting fa-4x"></i>
+	  				<h3>Start a conversation</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper tincidunt euismod. Fusce lectus ipsum, ornare eu magna quis.</p>
+	  			</div>
+	  		</div>
+  		</div>
+  		<div class="parallax vh50 img2"></div>
+  		<div class="container-fluid band row">
+  			<div class="band-content col-lg-4 col-md-12 col-sm-12">
+  				<i class="fa fa-quote-left fa-4x"></i>
+  				
+  			</div>
+  			<div class="band-content col-lg-4 col-md-12 col-sm-12">
+					<img src="./images/lucas.png" class="profile">
+					<div class="quote">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nibh ex, dictum non convallis quis, malesuada non magna. Donec rutrum, nulla at vulputate luctus, dui ligula dignissim tortor, eu blandit neque mi non risus.</p>
+					<p class="quote-person"> - Lucas O'Donnell</p>
+					</div>
+  			</div>
+  			<div class="band-content col-lg-4 col-md-12 col-sm-12">
+  				<i class="fa fa-quote-right fa-4x"></i>
+  				
+  			</div>
+  		</div>
+  		<div class="parallax vh50 img3"></div>
+  		<div class="container-fluid band row">
+  			<div class="band-content col-lg-4 col-md-12 col-sm-12">
+  				<i class="fa fa-quote-left fa-4x"></i>
+  				
+  			</div>
+  			<div class="band-content col-lg-4 col-md-12 col-sm-12">
+					<img src="./images/lucas.png" class="profile">
+					<div class="quote">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nibh ex, dictum non convallis quis, malesuada non magna. Donec rutrum, nulla at vulputate luctus, dui ligula dignissim tortor, eu blandit neque mi non risus.</p>
+					<p class="quote-person"> - Lucas O'Donnell</p>
+					</div>
+  			</div>
+  			<div class="band-content col-lg-4 col-md-12 col-sm-12">
+  				<i class="fa fa-quote-right fa-4x"></i>
+  				
+  			</div>
+  		</div>
+
+  		
+</body>
+</html>
